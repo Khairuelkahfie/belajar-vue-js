@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-        mesage: 'pacu gamakne sik berajah, sudah cukup sekali saja kesalahan yang pernah kamu lakukan dalam hidupmu'
+        // ketika ingin memasukan format dalam isi variabel (pesan: '<b>hello  word</b>')
+        pesan: '<b>hello  word</b>'
     }
 })
