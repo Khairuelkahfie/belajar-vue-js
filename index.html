@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Belajar vue js</title>
+    <title>Belajar vue js ombinasi output</title>
 
 </head>
 
 <body>
-    <!-- v-html merupakan atribut yang digunakan ktika memasukan tag html di app js maka dia akan mencetak sesuai dengan format yang ada di app js -->
     <div id="app">
-        {{pesan}} <br>
-        {{pesan1}} <br>
-        {{pesan2}}
+        <p>
+            {{pesan}}
+        </p>
+        <p v-text="pesan1"></p>
+        <p v-html="pesan2"></p>
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>

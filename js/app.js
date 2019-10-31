@@ -4,6 +4,6 @@ var app = new Vue({
         // ketika ingin memasukan format dalam isi variabel (pesan: '<b>hello  word</b>')
         pesan: 'hallo khairul aku rindu kamu',
         pesan1: 'khairul!',
-        pesan2: 'kahfie'
+        pesan2: '<b>kahfie</b>'
     }
 })
