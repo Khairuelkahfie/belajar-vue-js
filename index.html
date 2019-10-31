@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Belajar vue js ombinasi output</title>
+    <title>Belajar vue js nilai negasi pada v-if</title>
 
 </head>
 
 <body>
     <div id="app">
         <!-- atribut v-if merupakan  atribut yang digunakan untuk pengkondisisan -->
-        <p v-if="tampil">
+        <!-- dengan menambahkan simbol ! (negasi) atrinya dia akan membrikan nilai sebaliknya dari nilai yang telah di tentukan -->
+        <p v-if="!tampil">
             {{pesan}}
         </p>
 
