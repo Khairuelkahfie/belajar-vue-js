@@ -11,12 +11,11 @@
 
 <body>
     <div id="app">
-        <p>{{text}}</p>
-        <p v-text="angka"></p>
-        <p v-html="angkakoma"></p>
-        <p>{{pilihanbenar}}</p>
-        <p>{{pilihansalah}}</p>
-        <p>{{aray}}</p>
+        <!-- atribut v-if merupakan  atribut yang digunakan untuk pengkondisisan -->
+        <p v-if="tampil">
+            {{pesan}}
+        </p>
+
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
