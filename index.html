@@ -10,8 +10,12 @@
 </head>
 
 <body>
-    <div id="app">
-        <p>{{mesage}}</p>
+    <div id="app" v-text="mesage">
+        <!-- dalam menampilkan data terdapat beberapa metode -->
+        <!-- 1. metode mustaches => di letakan di dalam tag  html salah satuh contohnya script yang ada di bawah ini -->
+        <!-- <p>{{mesage}}</p> -->
+        <!-- 2. metode v-text =>  v-text ini di letakan sebagai atribut html contohnya di tag div app masu sebagai atribut-->
+
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
