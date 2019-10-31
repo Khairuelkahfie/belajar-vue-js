@@ -1,9 +1,17 @@
 var app = new Vue({
     el: '#app',
     data: {
-        // ketika ingin memasukan format dalam isi variabel (pesan: '<b>hello  word</b>')
-        pesan: 'hallo khairul aku rindu kamu',
-        pesan1: 'khairul!',
-        pesan2: '<b>kahfie</b>'
+        // pada variabel text merupakan tipe data string
+        text: 'khairul',
+        // pada variabel angka merupakan tipe data int
+        angka: 25,
+        // pada variabel angkakoma merupakan tipe data float
+        angkakoma: 2.5,
+        // pada variabel pilihanbenar merupakan tipe data bolean
+        pilihanbenar: true,
+        // pada variabel pilihansalah  juga merupakan tipe data bolean
+        pilihansalah: false,
+        // pada variabel aray merupakan tipe data aray
+        aray: ['aku', 'hanya', 'mencintai', 1, 'orang']
     }
 })
