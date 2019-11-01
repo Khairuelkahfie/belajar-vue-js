@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Belajar vue js memberikan nilai pada v-if</title>
+    <title>Belajar vue js pasanagan v-if, v-else</title>
 
 </head>
 
 <body>
     <div id="app">
         <!-- v-show penggunaannya mirip dengan v-if namun v-if lebih fleksibel -->
-        <p v-show="tampil == 'ada' ">
+        <p v-if="tampil">
             {{pesan}}
+        </p>
+        <p v-else="tampil">
+            {{pesan1}}
         </p>
 
     </div>
