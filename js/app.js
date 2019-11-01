@@ -2,11 +2,12 @@ var app = new Vue({
     el: '#app',
     data: {
         aku: 1,
-        kamu: 1
+        kamu: 1,
+        jumlah: null,
     },
-    computed: {
-        jumlah: function () {
-            return this.aku + this.kamu
+    methods: {
+        nikahkan: function () {
+            return this.jumlah = this.aku + this.kamu
         }
     }
 })
