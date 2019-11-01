@@ -11,7 +11,8 @@
 
 <body>
     <div id="app">
-        <p v-if="tampil == 'ada' ">
+        <!-- v-show penggunaannya mirip dengan v-if namun v-if lebih fleksibel -->
+        <p v-show="tampil == 'ada' ">
             {{pesan}}
         </p>
 
