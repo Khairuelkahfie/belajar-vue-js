@@ -5,8 +5,16 @@ var app = new Vue({
         keterangan: ''
     },
     watch: {
-        isi: function () {
-            this.keterangan = "sedang mengetik"
+        isi: 'ketik'
+    },
+    methods: {
+        ketik: function () {
+            if (this.isi == 'cinta') {
+                this.keterangan = 'aku juga cinta kamu'
+            } else {
+                this.keterangan = 'sedang mengetik'
+            }
+
         }
     }
 })
