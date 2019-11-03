@@ -10,19 +10,18 @@
 
 <body>
     <div id="app">
-        <h5>pilih yang di sukai :</h5>
-        <input type="checkbox" value="sepak bola" v-model="ceklis">
-        <label for="checkbox">sepak bola</label> <br>
-        <input type="checkbox" value="bulu tangkis" v-model="ceklis">
-        <label for="checkbox">Bulu Tangkis</label> <br>
-        <input type="checkbox" value="basket" v-model="ceklis">
-        <label for="checkbox"> basket</label>
-        <p>hal yang di sukai adlaah :</p>
-        <ul>
-            <li v-for="centang in ceklis">
-                {{centang}}
-            </li>
-        </ul>
+        <h5>piih kota tempat tinggal anda :</h5>
+        <select v-model="pilih">
+            <option disabled value="">pilih kota</option>
+            <option>mataram</option>
+            <option>praya</option>
+            <option>gerung</option>
+            <option>selong</option>
+            <option>tanjung</option>
+        </select>
+        <br>
+        <h5>kota tempat tinggal anda adalah </h5>
+        {{pilih}}
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
