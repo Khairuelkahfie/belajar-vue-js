@@ -5,25 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>eksplorasi dengan computed atau methods</title>
+    <title>wacther</title>
 </head>
 
 <body>
 
     <div id="app">
-        <p>
-            hasil dari {{aku}} dan {{kamu}} adalah {{jumlah}} <br>
-            apabila {{aku}} dan {{kamu}} di kurangi maka {{kurang}} <br>
-            dan aku ingin {{aku}} dan {{kamu}} dapat menjadi {{kali}} <br>
-            dan aku tidak ingin {{aku}} dan {{kamu}} di {{bagi}}
-        </p>
-        <button v-on:click='nikahkan'>proses</button> <br>
-        <p>
-            penjumlahan = {{tambah}} <br>
-            pengurangan = {{kurangi}} <br>
-            pengkalian = {{kalian}} <br>
-            pembagian = {{bagian}}
-        </p>
+        <input type="text" v-model="isi"> {{keterangan}}
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
