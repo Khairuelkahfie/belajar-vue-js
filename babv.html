@@ -18,7 +18,11 @@
         <input type="checkbox" value="basket" v-model="ceklis">
         <label for="checkbox"> basket</label>
         <p>hal yang di sukai adlaah :</p>
-        <p> {{ceklis}} </p>
+        <ul>
+            <li v-for="centang in ceklis">
+                {{centang}}
+            </li>
+        </ul>
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
