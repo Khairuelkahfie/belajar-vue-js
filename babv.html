@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bermain dengan form</title>
+    <title> textarea </title>
 </head>
 
 <body>
     <div id="app">
-        <input type="text" v-model="pesan" placeholder="ketik pesan disini"> <br>
-        <p>pesan anda adalah :</p> <br>
-        <p>
-            {{pesan}}
-        </p>
+        <textarea name="pesan" v-model="pesan" placeholder="ketik pesan disini" id="" cols="30" rows="10"></textarea>
+        <br>
+        <p>pesan anda adlah :</p> <br>
+        <p style="white-space: pre-line;"> {{pesan}} </p>
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
