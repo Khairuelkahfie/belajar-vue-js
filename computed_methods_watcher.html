@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>kolaborasi wacther dengan methods</title>
+    <title>implementasi watcher di form login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body>
+    <div class="col-md-4">
+        <div id="app" class="mx-auto bg-light p-3">
+            <input type="password" v-model="isi1" placeholder="password" class="form-control mb-1">
+            <input type="password" v-model="isi2" placeholder="confirm password" class="form-control mb-1">
+            <p v-html="keterangan"></p>
+            <input type="submit" value="SignUp" v-if="tampil" class="btn btn-primary btn-block">
+        </div>
 
-    <div id="app">
-        <input type="text" v-model="isi"> {{keterangan}}
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
