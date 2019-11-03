@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> textarea </title>
+    <title> radio </title>
 </head>
 
 <body>
     <div id="app">
-        <textarea name="pesan" v-model="pesan" placeholder="ketik pesan disini" id="" cols="30" rows="10"></textarea>
-        <br>
-        <p>pesan anda adlah :</p> <br>
-        <p style="white-space: pre-line;"> {{pesan}} </p>
+        <h3>pilihan anda adalah :</h3>
+        <input type="radio" name="s2" id="s2" v-model="pilih" value="S2"> 1 <br>
+        <input type="radio" name="menikah" id="menikah" v-model="pilih" value="Menikah"> 2 <br>
+        <h3>anda telah memilih :</h3>
+        <p> {{pilih}} </p>
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
