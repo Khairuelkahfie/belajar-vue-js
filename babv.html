@@ -10,11 +10,15 @@
 
 <body>
     <div id="app">
-        <h3>pilihan anda adalah :</h3>
-        <input type="radio" name="s2" id="s2" v-model="pilih" value="S2"> 1 <br>
-        <input type="radio" name="menikah" id="menikah" v-model="pilih" value="Menikah"> 2 <br>
-        <h3>anda telah memilih :</h3>
-        <p> {{pilih}} </p>
+        <h5>pilih yang di sukai :</h5>
+        <input type="checkbox" value="sepak bola" v-model="ceklis">
+        <label for="checkbox">sepak bola</label> <br>
+        <input type="checkbox" value="bulu tangkis" v-model="ceklis">
+        <label for="checkbox">Bulu Tangkis</label> <br>
+        <input type="checkbox" value="basket" v-model="ceklis">
+        <label for="checkbox"> basket</label>
+        <p>hal yang di sukai adlaah :</p>
+        <p> {{ceklis}} </p>
     </div>
     <script src="vendor/vue.js"></script>
     <script src="js/app.js"></script>
